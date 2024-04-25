@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App - Home</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>ToDo App</p>
+            </div>
+            <div class="account">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16">
+                    <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                        strokeWidth="1.5" d="M5.25 2.25h-3.5v12h3.5m4-9.5l-3.5 3.5l3.5 3.5m5-3.5h-8.5"></path>
+                </svg> <a href="./index.html" class="signOut">Sign Out</a>
+            </div>
+        </nav>
+    </header>
+    </div>
+
+    <div id="wrapper">
+        <form id="addTaskForm" class="add-task-form">
+            <input type="text" id="taskName" name="taskName" required>
+            <button id="addTask" type="submit" class="submit-task">Add Task</button>
+        </form>
+        <h2> Latest Task</h2>
+        <div id="tsk">
+                <div id="tasksList" class="tasks-list"></div>        
+
+        </div>
+    </div>
+    <script src="./js/task.js"></script>
+</body>
+
+</html>

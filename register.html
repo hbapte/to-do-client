@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App - Register</title>
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+
+  <body>
+    <main id="signup-form">
+      <form id="SignUpForm" onsubmit="return validateForm(event)">
+        <div id="signup-headers">
+          <h2 class="signup-form-title">Sign up</h2>
+          <p class="login-account">
+            Already have an account? <a href="./index.html">Login Now</a>
+          </p>
+        </div>
+
+        <fieldset>
+          <div class="signup-inputs">
+            <label for="names" class="signup-label">Names: </label>
+            <input type="text" name="names" id="names" autocomplete="name" />
+            <div id="namesError" class="error-message"></div>
+
+            <label for="email" class="signup-label">Email: </label>
+            <input type="email" name="email" id="email" />
+            <div id="emailError" class="error-message"></div>
+
+            <label for="username" class="signup-label">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              autocomplete="username"
+            />
+            <div id="usernameError" class="error-message"></div>
+
+            <label for="password" class="signup-label">Password:</label>
+            <input type="password" name="password" id="password" />
+
+            <div id="passwordError" class="error-message"></div>
+
+            <label for="confirm-password" class="signup-label"
+              >Confirm Password:</label
+            >
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+
+            <div id="confirmPasswordError" class="error-message"></div>
+
+            <div id="check">
+              <div class="signup-check">
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree"
+                  >Agree to
+                  <a href="#" class="terms">Terms & Conditions </a></label
+                >
+              </div>
+              <div class="signup-check" id="psw-visibility">
+               
+                  <input
+                    type="checkbox"
+                    onclick="myFunction()"
+                    name="togglePasswordVisibility"
+                    id="togglePasswordVisibility"
+                  />
+                  <label for="togglePasswordVisibility">Show Password</label>              
+    
+              </div>
+              
+            </div>
+
+            <button type="submit" class="signup-btn">Sign up</button>
+            <div id="SignupSent"></div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="m-f-password"> 
+        <form id="password-reset-form" onsubmit="return validateForm(event)">
+          <h2 class="reset-heading">Reset Password</h2>
+          
+          <!-- Hidden input for token -->
+          <!-- <input type="hidden" name="token" value="<%= token %>"> -->
+          
+          <label for="newPassword" class="signup-label">New Password:</label>
+          <input type="password" name="newPassword" id="newPassword" />
+          <i class="fas fa-eye" id="togglePassword"></i>
+          <div id="newPasswordError" class="error-message"></div>
+          
+          <label for="confirmNewPassword confirm-password" class="signup-label">Confirm New Password:</label>
+          <input type="password" name="confirmNewPassword" id="confirmNewPassword confirm-password" />
+          <div id="confirmNewPasswordError" class="error-message"></div>
+          
+          <button type="submit" class="forgot-password">Reset Password</button>
+      </form>
+    </main>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

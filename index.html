@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App - Login</title>
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body>
+    <main id="main-login">
+      <form id="LoginForm">
+        <div id="login-form-container">
+          <div class="login-header">
+            <h2 class="login-form-title">Sign In</h2>
+            <p class="create-account">
+              Not Registered yet?
+              <a href="./register.html">Create an account</a>
+            </p>
+          </div>
+          <fieldset>
+            <div class="login-inputs">
+              <label for="email-username" class="login-label">Email:</label>
+              <input type="email" name="email-username" id="email-username" />
+              <div id="email-usernameError" class="error-message"></div>
+
+              <div class="forgot-linkk">
+                <label for="password" class="login-label">Password:</label>
+                <a href="./forgot-pswd.html" class="forgot-link"
+                  >Forgot Password?</a
+                >
+              </div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="login-password"
+              />
+              <div id="password-Error" class="error-message"></div>
+
+              <div id="checks">
+                <div class="login-check checkbox-wrapper-39">
+                  <input type="checkbox" name="rememberMe" id="rememberMe" />
+
+                  <label for="rememberMe">Remember me</label>
+                </div>
+
+                <div>
+                  <div id="psw-visibility">
+                    <input
+                      type="checkbox"
+                      onclick="myFunction()"
+                      name="togglePasswordVisibility"
+                      id="togglePasswordVisibility"
+                    />
+                    <label for="togglePasswordVisibility">Show Password</label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="login-btn">Sign in</button>
+              <div id="LoginSent"></div>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
